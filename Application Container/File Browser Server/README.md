@@ -61,7 +61,7 @@ filebrowser
 
 `sudo podman image list`
 
-![image](https://hackmd.io/_uploads/rJrXjXJ0T.png)
+![image](https://imgur.com/LeLJLHv.png)
 
 #### 以該 Image 建立 Pod
 
@@ -77,11 +77,18 @@ filebrowser
 
 `sudo podman ps -a`
 
-![image](https://hackmd.io/_uploads/HyENpmkRp.png)
+![image](https://imgur.com/lFuouAZ.png)
 
 也可以開啟網頁查看
 使用 `ip addr` 查看 IP 後直接至瀏覽器輸入即可
 
-![image](https://hackmd.io/_uploads/HkGzNV10p.png)
+![image](https://imgur.com/rfaxc8R.png)
 
-![image](https://hackmd.io/_uploads/rk8mVNy06.png)
+
+### MySQL
+
+#### 取得 MySQL 的 Image
+
+`sudo podman pull mysql`
+
+可使用

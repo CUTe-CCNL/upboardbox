@@ -9,26 +9,26 @@ Alpine Linux 相當輕量化，重視安全性、簡潔、及資源效率
 
 首次進入 Alpine 時需登入 root（無密碼）進行後續設定
 
-![image](https://hackmd.io/_uploads/Byxa8AQnTp.png)
+![image](https://imgur.com/M7oQZho.png)
 
 ##### 開始安裝
 
 使用 `setup-alpine` 指令開始安裝並設定 Alpine
-![image](https://hackmd.io/_uploads/HkF5Cm26a.png)
+![image](https://imgur.com/kWq62La.png)
 
 ##### 選擇鍵盤配置
 
 不同鍵盤配置依語言有不同的變體
 範例選擇美式鍵盤 us/us
 
-![image](https://hackmd.io/_uploads/Byl6RX26p.png)
+![image](https://imgur.com/yJVCUhx.png)
 
 ##### 設定主機名稱
 
 主機名稱只能包含小寫字母、0-9、'0'、'-'
 範例使用 alpine-settest
 
-![image](https://hackmd.io/_uploads/H19ZkEnTp.png)
+![image](https://imgur.com/OZt3BPq.png)
 
 ##### 設定網路
 
@@ -39,30 +39,30 @@ Alpine Linux 相當輕量化，重視安全性、簡潔、及資源效率
 
 若之後有修改需求，可修改設定檔 /etc/network/interfaces
 
-![image](https://hackmd.io/_uploads/S16He42p6.png)
+![image](https://imgur.com/HPOD3eo.png)
 
 ##### 設定 root 密碼
 
-![image](https://hackmd.io/_uploads/BJXhe42pa.png)
+![image](https://imgur.com/danwDkP.png)
 
 ##### 設定時區
 
 範例選擇 Asia / Taipei
 
-![image](https://hackmd.io/_uploads/HJO4-E2p6.png)
+![image](https://imgur.com/aYcD6KJ.png)
 
 ##### 設定 Proxy
 
 
 預設 none
 
-![image](https://hackmd.io/_uploads/H16LZNnaT.png)
+![image](https://imgur.com/mh3TIWO.png)
 
 ##### 設定網路教時方式
 
 預設 Chrony
 
-![image](https://hackmd.io/_uploads/HysRZE2aa.png)
+![image](https://imgur.com/w0U00Ad.png)
 
 ##### 設定 APK 的鏡像站、套件儲存庫
 
@@ -80,7 +80,7 @@ Alpine Linux 相當輕量化，重視安全性、簡潔、及資源效率
 
 也有許多機構、大學有提供套件儲存庫，可依需求選擇或修改
 
-![image](https://hackmd.io/_uploads/HkhMG43aa.png)
+![image](https://imgur.com/pdH4Zve.png)
 
 
 ##### 設定使用者
@@ -90,7 +90,7 @@ Alpine Linux 相當輕量化，重視安全性、簡潔、及資源效率
  - 使用的 SSH 伺服器
 使用預設的 openssh
 
-![image](https://hackmd.io/_uploads/ryxy5Ehpp.png)
+![image](https://imgur.com/48wbMYL.png)
 
 
 ##### 設定硬碟使用
@@ -104,13 +104,13 @@ sys 系統：傳統的硬碟安裝方案
 y
 若是安裝實體電腦的 os 時，應注意硬碟是否含其他資料來決定是否進行格式化
 
-![image](https://hackmd.io/_uploads/Bk94dV36p.png)
+![image](https://imgur.com/eC7qbt3.png)
 
 ##### 安裝完成
 
 安裝完成後需重新開機
 
-![image](https://hackmd.io/_uploads/HkAcu43p6.png)
+![image](https://imgur.com/Gh5aVt7.png)
 
 
 ##### 後續設定

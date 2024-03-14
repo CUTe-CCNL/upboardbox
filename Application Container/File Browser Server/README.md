@@ -43,11 +43,12 @@ ENTRYPOINT [ "/opt/app/entrypoint" ]
 
 ### 建立 entrypoint
 
+[entrypoint](https://github.com/CUTe-CCNL/upboardbox/blob/main/Application%20Container/File%20Browser%20Server/entrypoint) 是 filebrowser 的設定檔，用來設定 filebrowser 的相關設定
 ```
 nano ~/fbs/entrypoint
 ```
 
-```dockerfile
+```bash
 #!/bin/bash
 # ~/fbs/entrypoint
 # filebrowser 權限設定：相關操作權限都是 False -> 唯讀

@@ -1,0 +1,7 @@
+#!/bin/bash
+# ~/fbs/entrypoint
+# filebrowser 權限設定：相關操作權限都是 False -> 唯讀
+filebrowser config init --port 4000 --address "" --baseurl "" --log "stdout" --root="/srv" --auth.method='noauth' --commands "" --lockPassword --perm.admin=false --perm.create=false --perm.delete=false --perm.execute=false --perm.modify=false --perm.rename=false --signup=false
+# 允許匿名登入，不須先建立使用者才能使用
+filebrowser users add anonymous "anonymous"
+filebrowser

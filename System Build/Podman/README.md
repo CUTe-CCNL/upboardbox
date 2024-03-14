@@ -3,6 +3,8 @@
 版本 v4.8.3
 ## Podman 特色
 
+![imgur](https://imgur.com/uPx2eDb.png)
+
 相比 Docker 在建立並運行 Container 時
 會開啟 dockerd 以及 containerd 兩個 daemon
 

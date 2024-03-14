@@ -71,27 +71,27 @@ Chroot 是一種將執行環境改變為特定目錄的操作。這允許程序�
 
 1. **建立（Build）**:
    - 首先你需要一個 **Dockerfile**，它包含了建立 Docker 映像檔（image）所需的指令。
-   - 使用 `docker build` 命令根據 Dockerfile 來建立一個新的映像檔。
+   - 使用 `podman build` 命令根據 Dockerfile 來建立一個新的映像檔。
 
 2. **運行（Run）**:
-   - 有了映像檔後，你可以使用 `docker run` 命令來創建一個新的container 實例。
+   - 有了映像檔後，你可以使用 `podman run` 命令來創建一個新的container 實例。
    - 這個 container 將基於你所建立的映像檔運行。
 
 3. **標籤（Tag）**:
-   - 你可以對建立的映像檔進行標籤，使用 `docker tag` 命令給映像檔加上有意義的名字和標籤。
+   - 你可以對建立的映像檔進行標籤，使用 `podman tag` 命令給映像檔加上有意義的名字和標籤。
 
 4. **提交（Commit）**:
-   - 對運行中的 container 做出變更後，可以使用 `docker commit` 命令將 container 的狀態保存為新的映像檔。
+   - 對運行中的 container 做出變更後，可以使用 `podman commit` 命令將 container 的狀態保存為新的映像檔。
 
 5. **推送（Push）**:
-   - 使用 `docker push` 命令將映像檔推送到 Docker 註冊中心（registry），比如 Docker Hub，讓其他人可以下載和使用你的映像檔。
+   - 使用 `podman push` 命令將映像檔推送到 Docker 註冊中心（registry），比如 Docker Hub，讓其他人可以下載和使用你的映像檔。
 
 6. **拉取（Pull）**:
-   - 可以使用 `docker pull` 命令從 Docker 註冊中心下載映像檔。
+   - 可以使用 `podman pull` 命令從 Docker 註冊中心下載映像檔。
 
 7. **儲存（Save）**與**加載（Load）**:
-   - 使用 `docker save` 命令將映像檔儲存為 tar 檔案，以進行備份或轉移。
-   - 使用 `docker load` 命令從 tar 檔案加載映像檔。
+   - 使用 `podman save` 命令將映像檔儲存為 tar 檔案，以進行備份或轉移。
+   - 使用 `podman load` 命令從 tar 檔案加載映像檔。
 
 8. **管理 container**:
-   - 使用 `docker start`、`docker stop` 和 `docker restart` 命令來管理 container 的運行狀態。
+   - 使用 `podman start`、`podman stop` 和 `podman restart` 命令來管理 container 的運行狀態。

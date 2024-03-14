@@ -32,7 +32,7 @@ RUN chmod a+x /opt/app/entrypoint
 VOLUME /srv
 # 開 4000 port
 EXPOSE 4000
-# 將使用者設給 app
+# 將使用者切換為 app
 USER app
 # 工作目錄在 /opt/app
 WORKDIR /opt/app

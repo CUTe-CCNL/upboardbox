@@ -1,5 +1,5 @@
 # FileBrowser Server
-使用 Podman 以 Dockerfile 建立一 FileBrowser Server 的 Pod
+使用 Podman 以 [Dockerfile](https://github.com/CUTe-CCNL/upboardbox/blob/main/Application%20Container/File%20Browser%20Server/Dockerfile) 建立一 FileBrowser Server 的 Pod
 
 ### 建立 Dockerfile
 

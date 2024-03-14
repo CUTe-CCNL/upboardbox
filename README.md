@@ -93,3 +93,17 @@ Chroot 是一種將執行環境改變為特定目錄的操作。這允許程序�
 
 8. **管理 container**:
    - 使用 `podman start`、`podman stop` 和 `podman restart` 命令來管理 container 的運行狀態。
+
+
+## Podman
+
+>Podman is an open source container, pod, and container image management engine. Podman makes it easy to find, run, build, and share containers.
+>-- Podman Official Web
+
+Podman 的設計思路是去中心化和保安，這為需要高安全性和多用戶環境的組織提供了一個強大的工具。它的無 daemon 架構和對非 root 用戶的支持使其成為企業和雲環境中的一個受歡迎的選擇。
+
+![imgur](https://imgur.com/uPx2eDb.png)
+
+相比 Docker 在建立並運行 Container 時，
+會開啟 dockerd 以及 containerd 兩個 daemon；Podman 並不會啟動背景程序，稱為 Daemonless，如此可避免運行 Daemon 可能帶來的安全漏洞。
+

@@ -61,7 +61,7 @@ group 是 Linux 內核的一個特性，它可以限制、記賬和隔離進程�
 
 #### Chroot
 
-Chroot 是一種將執行環境改變為特定目錄的操作。這允許程序與其子程序在這個目錄下運行，就像它是系統的根目錄一樣。在 container 技術中，Chroot 用於將 container 的根文件系統隔離開，使得 container
+Chroot 是一種將執行環境改變為特定目錄的操作。這允許程序與其子程序在這個目錄下運行，就像它是系統的根目錄一樣。在 container 技術中，Chroot 用於將 container 的根文件系統隔離開，使得 container 內的程序只能訪問到指定的文件系統範圍，從而增加了系統的安全性。Chroot 是建立 container 隔離環境的一個基本步驟，但它並不提供強隔離，通常會與其他技術（如 Namespace 和 Cgroup）結合使用以增強隔離效果。
 
 ### Container 的建立
 

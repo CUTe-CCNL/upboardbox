@@ -23,5 +23,5 @@ sudo podman run -d --name mysql -p 3306:3306 -v ~/mysql_data:/var/lib/mysql -e M
 
 ### 檢查 contaienr 是否有起來
 ```
-sudo  podman ps
+sudo podman ps
 ```

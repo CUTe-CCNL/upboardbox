@@ -76,6 +76,12 @@ sdb      8:16   1  14.9G  0 disk
 sudo mount /dev/sdb1 ~/ms
 ```
 
+若要卸載隨身碟，則可以使用以下指令
+
+```
+sudo umount /dev/sda1
+```
+
 ### 建立 MinIO 的 container
 
 建立 MinIO 的 container 時，將剛剛掛載的目錄 `~/ms` 掛載到 container 中的 `/data` 目錄下

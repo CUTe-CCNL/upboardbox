@@ -43,3 +43,47 @@ Pod 建立成功後，可以嘗試連線到 MinIO 的管理介面：
 若建立成功，可以看見管理介面的登入頁
 
 ![MinIO_Web_Login Page](https://imgur.com/Rgrpvhf.png)
+
+## MinIO 掛載在隨身碟
+
+### 掛載隨身碟作為 MinIO 的儲存位置
+
+
+首先在使用者家目錄下建立一個目錄 `~/ms` 作為 MinIO 的儲存位置
+
+```
+sudo rm -r ~/ms; mkdir ~/ms
+```
+
+接著將隨身碟插入電腦，並看是否有讀取的隨身碟
+
+```
+lsblk
+```
+
+若有讀取到隨身碟，則可以看到類似以下的資訊：
+
+```
+sdb      8:16   1  14.9G  0 disk
+└─sdb1   8:17   1  14.9G  0 part
+```
+
+
+
+接著將隨身碟掛載到 `~/ms` 目錄下
+
+```
+sudo mount /dev/sdb1 ~/ms
+```
+
+### 建立 MinIO 的 container
+
+建立 MinIO 的 container 時，將剛剛掛載的目錄 `~/ms` 掛載到 container 中的 `/data` 目錄下
+
+```
+sudo podman run --name m1 -d -p 9000:9000 -p 9001:9001 -v ~/ms:/data -e MINIO_SERVER_ACCESS_KEY=$MINIO_ACCESS_KEY -e MINIO_SERVER_SECRET_KEY=$MINIO_SECRET_KEY -e MINIO_ROOT_USER='bigred12345' -e MINIO_ROOT_PASSWORD='bigred12345' quay.io/minio/minio server --console-address ":9001" /data
+# 9000 Port 用於連接 MinIO 的 API
+# 9001 Port 連接 MinIO 的管理介面
+# 同時建立 Root 使用者帳號密碼為 bigred12345
+```
+

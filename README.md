@@ -19,6 +19,8 @@
   - [FileBrowser Server](https://github.com/CUTe-CCNL/upboardbox/blob/main/Application%20Container/File%20Browser%20Server/README.md)
 
   - [MySQL](https://github.com/CUTe-CCNL/upboardbox/blob/main/Application%20Container/MySQL/README.md)
+ 
+  - [Minio](https://github.com/CUTe-CCNL/upboardbox/blob/main/Application%20Container/Minio/README.md)
 
 ## 準備工作
 

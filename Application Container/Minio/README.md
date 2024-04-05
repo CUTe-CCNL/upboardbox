@@ -48,9 +48,9 @@ export MINIO_SECRET_KEY=$(cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fol
 sudo rm -r ~/ms; mkdir ~/ms
 ```
 
-### 建立 MinIO 的 Pod
+### 建立 MinIO 的 Container 
 
-建立 Pod 時，預先建立一個 Root 使用者 bigred12345。並將 MinIO 中檔案的儲存位置掛載到剛建立的目錄 `~/ms`，這一個目錄對 MinIO 來說相當於一個硬碟
+建立 Container 時，預先建立一個 Root 使用者 bigred12345。並將 MinIO 中檔案的儲存位置掛載到剛建立的目錄 `~/ms`，這一個目錄對 MinIO 來說相當於一個硬碟
 
 ```
 sudo podman run --name m1 -d -p 9000:9000 -p 9001:9001 -v ~/ms:/data -e MINIO_SERVER_ACCESS_KEY=$MINIO_ACCESS_KEY -e MINIO_SERVER_SECRET_KEY=$MINIO_SECRET_KEY -e MINIO_ROOT_USER='bigred12345' -e MINIO_ROOT_PASSWORD='bigred12345' quay.io/minio/minio server --console-address ":9001" /data
@@ -59,7 +59,7 @@ sudo podman run --name m1 -d -p 9000:9000 -p 9001:9001 -v ~/ms:/data -e MINIO_SE
 # 同時建立 Root 使用者帳號密碼為 bigred12345
 ```
 
-Pod 建立成功後，可以嘗試連線到 MinIO 的管理介面：
+Container 建立成功後，可以嘗試連線到 MinIO 的管理介面：
 
 `http:<虛擬機的IP>:9001`
 

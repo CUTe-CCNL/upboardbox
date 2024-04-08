@@ -11,6 +11,7 @@
 
 ## 安裝與設定
 1.確保已安裝 MinIO Server 並且正在運行。
+
 2.使用 pip 安裝 MinIO Python SDK:
 
 ```bash

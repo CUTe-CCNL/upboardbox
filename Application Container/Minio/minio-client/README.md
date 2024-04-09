@@ -56,7 +56,7 @@ storage = MinIOStorage(endpoint='localhost:9000', access_key='yourAccessKey', se
 
 ```python
 from domain.models.file import File
-from domain.use_cases.upload_file import UploadFile
+from application.usecases.upload_file import UploadFile
 
 upload_file_use_case = UploadFile(storage)
 upload_file_use_case.execute(File('destination/path.jpg'), File('source/path.jpg'))
@@ -65,7 +65,7 @@ upload_file_use_case.execute(File('destination/path.jpg'), File('source/path.jpg
 3.下載文件:
 
 ```python
-from domain.use_cases.download_file import DownloadFile
+from application.usecases.download_file import DownloadFile
 
 download_file_use_case = DownloadFile(storage)
 download_file = download_file_use_case.execute('file_name.jpg', 'destination/path')
@@ -73,7 +73,7 @@ download_file = download_file_use_case.execute('file_name.jpg', 'destination/pat
 
 4.列出所有文件:
 ```python
-from domain.use_cases.list_file import ListFile
+from application.usecases.list_file import ListFile
 
 list_file_use_case = ListFile(storage)
 list_file_use_case.execute()
@@ -81,7 +81,7 @@ list_file_use_case.execute()
 
 5.刪除文件:
 ```python
-from domain.use_cases.delete_file import DeleteFile
+from application.usecases.delete_file import DeleteFile
 
 delete_file_use_case = DeleteFile(storage)
 delete_file_use_case.execute('file_name.jpg')
